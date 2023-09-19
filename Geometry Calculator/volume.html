@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalkulator Volume Bangun Ruang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="Volume">
+        <h1>Geometry calculator</h1>
+        <div class="form-container">
+            <label for="shape">Choose a shape:</label>
+            <select id="shape">
+                <option value="" disabled selected hidden>Choose a shape to count:</option>
+                <option value="bola">Ball</option>
+                <option value="balok">Block</option>
+                <option value="kubus">Cube</option>
+                <option value="kerucut">Cone</option>
+                <option value="prisma segiempat">Quadrilateral Prism</option>
+                <option value="limas segiempat">Quadrilateral Pyramid</option>
+                <option value="prisma segitiga">Triangular Prism</option>
+                <option value="limas segitiga">Triangular Pyramid</option>
+                <option value="tabung">Tube</option>
+                <button onclick="calculateVolume()">Calculate</button>
+            </select>
+            <div id="dimension-inputs"></div>
+            <div>
+                <label for="answer">The Answer: </label>
+            </div>
+            <div id="result"></div>
+        </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
